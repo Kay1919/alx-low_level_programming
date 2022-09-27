@@ -4,11 +4,12 @@
 /**
  *  * *_strpbrk - searches a string for any of a set of bytes
  *   * @s: string to search
- *    * @accept: stringcontaining the bytes to look for
+ *    * @accept: string containing the bytes to look for
  *     *
  *      * Return: pointer to the byte in s that matches one of the bytes in accept
  *       * or NULL if no such byte is found
  **/
+
 char *_strpbrk(char *s, char *accept)
 {
 	int i, j;
@@ -22,8 +23,7 @@ char *_strpbrk(char *s, char *accept)
 				return (s);
 			}
 		}
-			s++;
+		s++;
 	}
-
 	return (NULL);
 }
